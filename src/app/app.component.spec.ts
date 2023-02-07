@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'wordcounter'`, () => {
+  it(`should have as title 'word-counter'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('wordcounter');
+    expect(app.title).toEqual('word-counter');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('wordcounter app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('word-counter app is running!');
   });
 });
